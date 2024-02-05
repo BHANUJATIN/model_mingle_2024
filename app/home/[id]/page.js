@@ -5,7 +5,7 @@ import Blog from "@/components/Blog";
 import LoadingSpinner from "@/components/LoadingSpinner";
 
 const getBlogById = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/blog/${id}`);
+  const res = await fetch(`/api/blog/${id}`);
   const data = await res.json();
   return data.post;
 };

@@ -18,7 +18,7 @@ const Page = () => {
   useEffect(() => {
     async function fetchBlogs() {
       setIsLoading(true);
-      const res = await fetch("http://localhost:3000/api/blog");
+      const res = await fetch("/api/blog");
       const data = await res.json();
       setPosts(data.posts);
       const sortedPosts = data.posts.sort(compareLikes);
