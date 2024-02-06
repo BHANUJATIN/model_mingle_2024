@@ -15,7 +15,7 @@ const Header = ({handleSearch}) => {
     <div className="sticky top-0 z-50 flex w-screen justify-between items-center px-4 py-2 md:py-2 md:px-14 border-b-2 backdrop-blur-sm bg-white/10">
       <div className="font-mono text-xl md:text-4xl py-2">
         <Link href="/home">
-          <p className="">MM</p>
+          <p className="">ModelMingle</p>
         </Link>
       </div>
       <div className="flex items-center">

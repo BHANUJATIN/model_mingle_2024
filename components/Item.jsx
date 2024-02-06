@@ -40,7 +40,7 @@ const Item = ({
       const updatedLikes = Number(likes); // Convert likes to number
 
       // Make API call with updated like count
-      const res = await fetch(`http://localhost:3000/api/blog/${postId}`, {
+      const res = await fetch(`/api/blog/${postId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

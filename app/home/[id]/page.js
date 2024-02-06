@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Blog from "@/components/Blog";
 import LoadingSpinner from "@/components/LoadingSpinner";
+import MoveToHome from "@/components/MoveToHome";
 
 const getBlogById = async (id) => {
   const res = await fetch(`/api/blog/${id}`);
@@ -36,6 +37,7 @@ const Page = ({ params }) => {
           <LoadingSpinner />
         </div>
       )}
+      <MoveToHome/>
     </div>
   );
 };

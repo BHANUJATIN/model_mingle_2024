@@ -5,6 +5,7 @@ import {
   ArrowTopRightOnSquareIcon,
   DocumentIcon,
 } from "@heroicons/react/24/outline";
+import { getDateFormat } from "@/util/getDateFormat";
 
 const Blog = ({ data }) => {
   return (
@@ -16,7 +17,7 @@ const Blog = ({ data }) => {
         <div className="">
           <div className="flex gap-x-7 items-center pb-2">
             <div>
-              <p className="text-sm text-blue-500">24/12/2024</p>
+              <p className="text-sm text-blue-500">{getDateFormat(data.date).disp}</p>
             </div>
             <div>
               <Tag data={data.category} />
