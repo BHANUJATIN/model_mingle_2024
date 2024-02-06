@@ -31,10 +31,9 @@ const Header = ({handleSearch}) => {
         </div>
         <Link href="/create">
           <div className="flex items-center ml-1 md:mr-3">
-            <span className="w-5 md:w-7">
+            <span title="Add your LLM" className="w-5 md:w-7">
               <PlusCircleIcon />
             </span>
-            <p className="font-bold">Add</p>
           </div>
         </Link>
       </div>
