@@ -4,7 +4,7 @@ export default function RootLayout({ children }) {
 
 
   return (
-    <div className="w-screen mb-4 md:mb-8">
+    <div className="w-screen pb-4">
         <Header/>
         {children}
         

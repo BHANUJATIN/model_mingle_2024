@@ -24,7 +24,7 @@ const Header = ({handleSearch}) => {
         </span>
         <div>
           <input
-            className="hidden md:block bg-gray-200 md:p-2 md:px-4 rounded-full focus:border ml-1 focus:outline-none"
+            className="hidden md:block bg-white md:p-2 md:px-4 rounded-full focus:border ml-1 focus:outline-none"
             placeholder="Search..."
             onChange={handleSearch}
           />

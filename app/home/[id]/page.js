@@ -32,7 +32,7 @@ const Page = ({ params }) => {
       {postData ? (
         <Blog data={postData} />
       ) : (
-        <div className="m-12">
+        <div className="m-12 ">
           <LoadingSpinner />
         </div>
       )}

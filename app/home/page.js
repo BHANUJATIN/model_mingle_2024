@@ -5,6 +5,8 @@ import Item from "@/components/Item";
 import Navbar from "@/components/Navbar";
 import LoadingSpinner from "@/components/LoadingSpinner";
 
+
+
 const Page = () => {
   const [posts, setPosts] = useState([]);
   const [featured, setFeatured] = useState([]);
@@ -39,6 +41,7 @@ const Page = () => {
         <div className="block md:hidden">
           <Navbar activeTab={activeTab} onToggle={handleToggle} />
         </div>
+        
         <div className="mt-2 flex flex-col gap-y-3 md:gap-y-5">
           {isLoading && <LoadingSpinner/>}
           {!isLoading &&

@@ -102,7 +102,7 @@ const AddForm = () => {
 
   return (
     <div className="flex justify-center w-full">
-      <div className="w-full h-full md:w-10/12 xl:w-2/3 shadow-2xl shadow-blue-500 bg-white border-gray-600 border-2 rounded-xl py-4 px-6 md:py-20 md:px-24">
+      <div className="w-full h-full md:w-10/12 xl:w-2/3 shadow-2xl bg-white/60 backdrop-blur-sm border-white border-2 rounded-xl py-4 px-6 md:py-20 md:px-24">
         <div>
           <div>
             <form onSubmit={handleSubmit}>

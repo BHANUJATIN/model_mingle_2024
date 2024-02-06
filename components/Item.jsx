@@ -63,7 +63,7 @@ const Item = ({
   };
 
   return (
-    <div className="rounded-lg p-2 md:p-4 bg-gradient-to-r from-gray-200 to-slate-50 hover:text-blue-800 hover:bg-white border hover:shadow-md hover:shadow-gray-400 hover:from-gray-100 hover:to-white">
+    <div className="rounded-lg p-2 md:p-4 bg-gradient-to-r from-gray-200/20 to-slate-50 hover:text-blue-800 border hover:shadow-md hover:shadow-white  backdrop-blur-lg">
       <div className="flex justify-between">
         <div className="flex gap-x-2 md:gap-x-10">
           <Tag data={category}/>
