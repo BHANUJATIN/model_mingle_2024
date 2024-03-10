@@ -5,8 +5,6 @@ import Item from "@/components/Item";
 import Navbar from "@/components/Navbar";
 import LoadingSpinner from "@/components/LoadingSpinner";
 
-
-
 const Page = () => {
   const [posts, setPosts] = useState([]);
   const [featured, setFeatured] = useState([]);

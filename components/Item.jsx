@@ -1,7 +1,8 @@
 // Item.js
 import React, { useState } from "react";
 import Link from "next/link";
-import { HeartIcon } from "@heroicons/react/24/solid";
+import { HeartIcon as HeartOutlineIcon} from "@heroicons/react/24/Outiline";
+import { HeartIcon as HeartFillIcon} from "@heroicons/react/24/Solid";
 import Tag from "./Tag";
 
 const Item = ({
@@ -63,13 +64,14 @@ const Item = ({
   };
 
   return (
-    <div className="rounded-lg p-2 md:p-4 bg-gradient-to-r from-gray-200/20 to-slate-50 hover:text-blue-800 border hover:shadow-md hover:shadow-white  backdrop-blur-lg">
+    // <div className="rounded-lg p-2 md:p-4 bg-gradient-to-r from-gray-200/20 to-slate-50 hover:text-blue-800 border hover:shadow-md hover:shadow-white  backdrop-blur-lg">
+    <div className="rounded-lg p-2 md:p-4 bg-gray-800 hover:shadow-md hover:bg-gray-700  backdrop-blur-lg text-white">
       <div className="flex justify-between">
         <div className="flex gap-x-2 md:gap-x-10">
-          <Tag data={category}/>
-          <Tag data={origin}/>
+          <Tag data={category} />
+          <Tag data={origin} />
         </div>
-
+        
         <div
           className="w-fit flex flex-col justify-center items-center"
           onClick={handleLikeClick}
@@ -85,25 +87,18 @@ const Item = ({
 
       <div>
         <Link href={`/home/${postId}`}>
-          <h1 className="md:text-xl text-lg font-bold my-2 md:my-3">
-            {title}
-          </h1>
+          <h1 className="md:text-xl text-lg font-bold my-2 md:my-3">{title}</h1>
         </Link>
       </div>
 
       <div>
-        <p className="text-black text-sm md:text-sm">
+        <p className="text-sm md:text-sm">
           {showFullDescription
             ? description
             : `${description.slice(0, 200)}... `}
           <Link href={`/home/${postId}`}>
-
-          <span
-            className="text-blue-600 cursor-pointer"
-            >
-            Read more
-          </span>
-            </Link>
+            <span className="text-blue-600 cursor-pointer">Read more</span>
+          </Link>
         </p>
       </div>
     </div>

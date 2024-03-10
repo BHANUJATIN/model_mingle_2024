@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import "react-dropdown/style.css";
 
 const inputClass =
-  "p-2 focus:outline-none border-1 border-black w-full md:w-2/3 rounded-b-lg md:rounded-lg md:rounded-l-none";
+  "p-2 focus:outline-none w-full md:w-2/3 rounded-b-lg md:rounded-lg md:rounded-l-none bg-gray-700";
 const inputDivClass =
   "w-full flex flex-col md:flex-row gap-x-7 justify-between items-center bg-black border-2 border-black rounded-lg";
 const labelClass = "text-sm w-full md:w-3/12 text-white p-2 text-start ";
@@ -15,7 +15,7 @@ const textAreaLabelClass =
 const textAreaDivClass =
   "w-full flex flex-col gap-x-7 justify-between items-start bg-black border border-black rounded-lg";
 const textAreaClass =
-  "p-2 focus:outline-none border border-black w-full rounded-b-lg md:rounded-t-none";
+  "p-2 focus:outline-none bg-gray-700 w-full rounded-b-lg md:rounded-t-none";
 
 const languageModelCategories = [
   "OpenAI GPT Models (e.g., GPT-3, GPT-2)",
@@ -102,7 +102,7 @@ const AddForm = () => {
 
   return (
     <div className="flex justify-center w-full">
-      <div className="w-full h-full md:w-10/12 xl:w-2/3 shadow-2xl bg-white/60 backdrop-blur-sm border-white border-2 rounded-xl py-4 px-6 md:py-20 md:px-24">
+      <div className="w-full h-full md:w-10/12 xl:w-2/3 shadow-2xl bg-gray-700/60 backdrop-blur-sm border-white border rounded-2xl py-4 px-6 md:py-20 md:px-24">
         <div>
           <div>
             <form onSubmit={handleSubmit}>
@@ -135,7 +135,7 @@ const AddForm = () => {
                   <label className={labelClass}>Category</label>
                   <Dropdown
                     name="category"
-                    className="w-full md:w-2/3 "
+                    className="w-full md:w-2/3 bg-gray-700"
                     options={languageModelCategories}
                     onChange={handleCategoryChange}
                     value={formData.category}
